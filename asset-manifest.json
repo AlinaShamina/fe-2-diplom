@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/fe-2-diplom/static/css/main.b22d2718.css",
-    "main.js": "/fe-2-diplom/static/js/main.d8d85a03.js",
+    "main.js": "/fe-2-diplom/static/js/main.cb029f6d.js",
     "static/media/train-hero.jpg": "/fe-2-diplom/static/media/train-hero.c5dcb9d3d09126e62c77.jpg",
     "index.html": "/fe-2-diplom/index.html",
     "main.b22d2718.css.map": "/fe-2-diplom/static/css/main.b22d2718.css.map",
-    "main.d8d85a03.js.map": "/fe-2-diplom/static/js/main.d8d85a03.js.map"
+    "main.cb029f6d.js.map": "/fe-2-diplom/static/js/main.cb029f6d.js.map"
   },
   "entrypoints": [
     "static/css/main.b22d2718.css",
-    "static/js/main.d8d85a03.js"
+    "static/js/main.cb029f6d.js"
   ]
 }
