@@ -103,7 +103,7 @@ function TrainCard({
 
         <div className="train-card__train-icon">
           <img
-            src="/assets/train.svg"
+            src={`${process.env.PUBLIC_URL}/assets/train.svg`}
             alt=""
           />
         </div>
@@ -179,7 +179,7 @@ function TrainCard({
             <div className="train-card__duration-top">
 
               <img
-                src="/assets/clock.svg"
+                src={`${process.env.PUBLIC_URL}/assets/clock.svg`}
                 alt=""
               />
 
@@ -232,28 +232,28 @@ function TrainCard({
 
           <div className="service">
             <img
-              src="/assets/wifi.svg"
+              src={`${process.env.PUBLIC_URL}/assets/wifi.svg`}
               alt=""
             />
           </div>
 
           <div className="service">
             <img
-              src="/assets/air.svg"
+              src={`${process.env.PUBLIC_URL}/assets/air.svg`}
               alt=""
             />
           </div>
 
           <div className="service">
             <img
-              src="/assets/blanket.svg"
+              src={`${process.env.PUBLIC_URL}/assets/blanket.svg`}
               alt=""
             />
           </div>
 
           <div className="service">
             <img
-              src="/assets/rocket.svg"
+              src={`${process.env.PUBLIC_URL}/assets/rocket.svg`}
               alt=""
             />
           </div>
@@ -298,7 +298,7 @@ function TrainCard({
 
           <div className="coach-type">
             <img
-              src="/assets/seat.svg"
+              src={`${process.env.PUBLIC_URL}/assets/seat.svg`}
               alt=""
             />
 
@@ -309,7 +309,7 @@ function TrainCard({
 
           <div className="coach-type">
             <img
-              src="/assets/platzkart.svg"
+              src={`${process.env.PUBLIC_URL}/assets/platzkart.svg`}
               alt=""
             />
 
@@ -320,7 +320,7 @@ function TrainCard({
 
           <div className="coach-type">
             <img
-              src="/assets/coupe.svg"
+              src={`${process.env.PUBLIC_URL}/assets/coupe.svg`}
               alt=""
             />
 
@@ -331,7 +331,7 @@ function TrainCard({
 
           <div className="coach-type">
             <img
-              src="/assets/lux.svg"
+              src={`${process.env.PUBLIC_URL}/assets/lux.svg`}
               alt=""
             />
 
@@ -364,7 +364,7 @@ function TrainCard({
           <div className="train-card__passengers">
 
             <img
-              src="/assets/passenger.svg"
+              src={`${process.env.PUBLIC_URL}/assets/passenger.svg`}
               alt=""
             />
 

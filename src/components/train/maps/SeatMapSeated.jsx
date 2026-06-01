@@ -45,11 +45,11 @@ function SeatMapSeated({ seats, selectedSeats, onSeatClick }) {
           {/* Верхние иконки */}
           <div className="seated-top">
             <div className="seated-service-room">
-              <img src="/assets/conductor.svg" alt="Проводник" />
+              <img src={`${process.env.PUBLIC_URL}/assets/conductor.svg`} alt="Проводник" />
             </div>
             <div className="wagon-end-icons">
-              <img src="/assets/no-smoking.svg" alt="Не курить" />
-              <img src="/assets/trash.svg" alt="Мусор" />
+              <img src={`${process.env.PUBLIC_URL}/assets/no-smoking.svg`} alt="Не курить" />
+              <img src={`${process.env.PUBLIC_URL}/assets/trash.svg`} alt="Мусор" />
             </div>
           </div>
 
@@ -81,8 +81,8 @@ function SeatMapSeated({ seats, selectedSeats, onSeatClick }) {
 
           {/* Нижние иконки */}
           <div className="wagon-bottom-icons">
-            <img src="/assets/boiling-water.svg" alt="Вода" />
-            <img src="/assets/toilet.svg" alt="Туалет" />
+            <img src={`${process.env.PUBLIC_URL}/assets/boiling-water.svg`} alt="Вода" />
+            <img src={`${process.env.PUBLIC_URL}/assets/toilet.svg`} alt="Туалет" />
           </div>
 
         </div>

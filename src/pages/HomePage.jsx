@@ -77,7 +77,7 @@ function HomePage() {
             <div className="how-grid">
               <div className="how-card">
                 <img
-                  src="/assets/train.svg"
+                  src={`${process.env.PUBLIC_URL}/assets/train.svg`}
                   alt="Поезд"
                 />
 
@@ -94,7 +94,7 @@ function HomePage() {
 
               <div className="how-card">
                 <img
-                  src="/assets/wifi.svg"
+                  src={`${process.env.PUBLIC_URL}/assets/wifi.svg`}
                   alt="Услуги"
                 />
 
@@ -111,7 +111,7 @@ function HomePage() {
 
               <div className="how-card">
                 <img
-                  src="/assets/rocket.svg"
+                  src={`${process.env.PUBLIC_URL}/assets/rocket.svg`}
                   alt="Бронирование"
                 />
 
@@ -128,7 +128,7 @@ function HomePage() {
 
               <div className="how-card">
                 <img
-                  src="/assets/blanket.svg"
+                  src={`${process.env.PUBLIC_URL}/assets/blanket.svg`}
                   alt="Комфорт"
                 />
 
@@ -146,7 +146,7 @@ function HomePage() {
             <div className="features">
               <div className="feature-item">
                 <img
-                  src="/assets/wifi.svg"
+                  src={`${process.env.PUBLIC_URL}/assets/wifi.svg`}
                   alt=""
                 />
 
@@ -157,7 +157,7 @@ function HomePage() {
 
               <div className="feature-item">
                 <img
-                  src="/assets/air.svg"
+                  src={`${process.env.PUBLIC_URL}/assets/air.svg`}
                   alt=""
                 />
 
@@ -168,7 +168,7 @@ function HomePage() {
 
               <div className="feature-item">
                 <img
-                  src="/assets/blanket.svg"
+                  src={`${process.env.PUBLIC_URL}/assets/blanket.svg`}
                   alt=""
                 />
 
@@ -235,7 +235,7 @@ function HomePage() {
             <div className="contacts-grid">
               <div className="contact-item">
                 <img
-                  src="/assets/phone.svg"
+                  src={`${process.env.PUBLIC_URL}/assets/phone.svg`}
                   alt=""
                 />
 
@@ -246,7 +246,7 @@ function HomePage() {
 
               <div className="contact-item">
                 <img
-                  src="/assets/mail.svg"
+                  src={`${process.env.PUBLIC_URL}/assets/mail.svg`}
                   alt=""
                 />
 
@@ -257,7 +257,7 @@ function HomePage() {
 
               <div className="contact-item">
                 <img
-                  src="/assets/address.svg"
+                  src={`${process.env.PUBLIC_URL}/assets/address.svg`}
                   alt=""
                 />
 
@@ -269,12 +269,12 @@ function HomePage() {
 
             <div className="socials">
               <img
-                src="/assets/youtube.svg"
+                src={`${process.env.PUBLIC_URL}/assets/youtube.svg`}
                 alt="Youtube"
               />
 
               <img
-                src="/assets/vk.svg"
+                src={`${process.env.PUBLIC_URL}/assets/vk.svg`}
                 alt="VK"
               />
             </div>

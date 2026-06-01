@@ -73,7 +73,7 @@ function SeatMapCoupe({
         <div className="coupe-service-room">
 
           <img
-            src="/assets/conductor.svg"
+            src={`${process.env.PUBLIC_URL}/assets/conductor.svg`}
             alt=""
           />
 
@@ -121,12 +121,12 @@ function SeatMapCoupe({
         <div className="wagon-end-icons">
 
           <img
-            src="/assets/no-smoking.svg"
+            src={`${process.env.PUBLIC_URL}/assets/no-smoking.svg`}
             alt=""
           />
 
           <img
-            src="/assets/trash.svg"
+            src={`${process.env.PUBLIC_URL}/assets/trash.svg`}
             alt=""
           />
 
@@ -139,12 +139,12 @@ function SeatMapCoupe({
       <div className="wagon-bottom-icons">
 
         <img
-          src="/assets/boiling-water.svg"
+          src={`${process.env.PUBLIC_URL}/assets/boiling-water.svg`}
           alt=""
         />
 
         <img
-          src="/assets/toilet.svg"
+          src={`${process.env.PUBLIC_URL}/assets/toilet.svg`}
           alt=""
         />
 

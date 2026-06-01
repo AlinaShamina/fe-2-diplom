@@ -747,7 +747,7 @@ function TrainPage() {
                       />
 
                       <img
-                        src="/assets/wifi.svg"
+                        src={`${process.env.PUBLIC_URL}/assets/wifi.svg`}
                         alt=""
                       />
 
@@ -780,7 +780,7 @@ function TrainPage() {
                       />
 
                       <img
-                        src="/assets/blanket.svg"
+                        src={`${process.env.PUBLIC_URL}/assets/blanket.svg`}
                         alt=""
                       />
 

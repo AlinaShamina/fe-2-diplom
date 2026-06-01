@@ -212,7 +212,7 @@ function SearchForm() {
           <div className="passenger-counter__top">
 
             <img
-              src="/assets/passenger.svg"
+              src={`${process.env.PUBLIC_URL}/assets/passenger.svg`}
               alt=""
             />
 
@@ -243,7 +243,7 @@ function SearchForm() {
           <div className="passenger-counter__top">
 
             <img
-              src="/assets/passenger.svg"
+              src={`${process.env.PUBLIC_URL}/assets/passenger.svg`}
               alt=""
             />
 
@@ -274,7 +274,7 @@ function SearchForm() {
           <div className="passenger-counter__top">
 
             <img
-              src="/assets/passenger.svg"
+              src={`${process.env.PUBLIC_URL}/assets/passenger.svg`}
               alt=""
             />
 
