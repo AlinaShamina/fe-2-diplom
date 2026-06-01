@@ -1,0 +1,395 @@
+/* =========================================
+   PASSENGERS PAGE
+========================================= */
+
+.passengers-page,
+.payment-page,
+.success-page {
+  min-height: 100vh;
+
+  background: #f4f3f6;
+
+  padding: 180px 0 100px;
+
+}
+
+/* =========================================
+   LAYOUT
+========================================= */
+
+.passengers-layout,
+.payment-layout {
+  display: grid;
+
+  grid-template-columns:
+    1fr 320px;
+
+  gap: 32px;
+
+  align-items: flex-start;
+}
+
+/* =========================================
+   LEFT
+========================================= */
+
+.passengers-forms,
+.payment-main {
+  display: flex;
+  flex-direction: column;
+
+  gap: 24px;
+}
+
+/* =========================================
+   CARD
+========================================= */
+
+.passenger-card,
+.payment-card,
+.sidebar-card,
+.success-card {
+  background: white;
+
+  border-radius: 24px;
+
+  padding: 28px;
+
+  transition:
+   transform 0.2s ease,
+   box-shadow 0.2s ease;
+
+  box-shadow:
+    0 8px 30px rgba(0,0,0,0.06);
+}
+.passenger-card:hover,
+.payment-card:hover,
+.sidebar-card:hover,
+.success-card:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 14px 36px rgba(0,0,0,0.1);
+}
+
+/* =========================================
+   PASSENGER TOP
+========================================= */
+
+.passenger-card__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 24px;
+}
+
+.passenger-card__top h2 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+/* =========================================
+   INPUTS
+========================================= */
+
+.passenger-select,
+.passenger-grid input,
+.passenger-docs input,
+.passenger-docs select,
+.payment-card input {
+  width: 100%;
+
+  height: 56px;
+
+  border: 1px solid #d9d9d9;
+  border-radius: 10px;
+
+  padding: 0 18px;
+
+  font-size: 18px;
+
+  background: white;
+
+  margin-bottom: 16px;
+}
+
+.passenger-select:focus,
+.passenger-grid input:focus,
+.passenger-docs input:focus,
+.passenger-docs select:focus,
+.payment-card input:focus {
+  outline: none;
+
+  border-color: #ffa800;
+
+  box-shadow:
+    0 0 0 4px rgba(255,168,0,0.15);
+}
+.passenger-grid input:hover,
+.passenger-docs input:hover,
+.passenger-docs select:hover,
+.payment-card input:hover,
+.passenger-select:hover {
+  border-color: #bdbdbd;
+}
+
+.payment-card input:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.passenger-select {
+  margin-bottom: 24px;
+}
+
+.passenger-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 16px;
+
+  margin-bottom: 24px;
+}
+
+.passenger-docs {
+  display: grid;
+
+  grid-template-columns:
+    1fr 160px 1fr;
+
+  gap: 16px;
+
+  margin-top: 24px;
+}
+
+/* =========================================
+   GENDER
+========================================= */
+
+.passenger-gender {
+  display: flex;
+  gap: 12px;
+}
+
+.passenger-gender button {
+  width: 72px;
+  height: 56px;
+
+  border: 1px solid #d9d9d9;
+  border-radius: 10px;
+
+  background: white;
+
+  font-size: 22px;
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+.passenger-gender button.active {
+  background: #ffa800;
+
+  color: white;
+
+  border-color: #ffa800;
+}
+
+/* =========================================
+   PAYMENT
+========================================= */
+
+.payment-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, 1fr);
+
+  gap: 16px;
+
+  margin-bottom: 16px;
+}
+
+.payment-card h1,
+.payment-card h2 {
+  margin-bottom: 24px;
+
+  font-size: 30px;
+}
+
+.payment-card label {
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  margin-bottom: 16px;
+
+  font-size: 20px;
+}
+
+.payment-card input[type='radio'] {
+  width: 18px;
+  height: 18px;
+}
+
+/* =========================================
+   SIDEBAR
+========================================= */
+
+.passengers-sidebar,
+.payment-sidebar {
+  display: flex;
+  flex-direction: column;
+
+  gap: 24px;
+
+  position: sticky;
+
+  top: 24px;
+}
+
+.sidebar-card h3 {
+  margin-bottom: 18px;
+
+  font-size: 24px;
+}
+
+.sidebar-card p {
+  margin-bottom: 10px;
+
+  font-size: 18px;
+}
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+.passengers-next,
+.payment-next,
+.success-button {
+  height: 60px;
+
+  border: none;
+  border-radius: 16px;
+
+  background: #ffa800;
+
+  color: white;
+
+  font-size: 20px;
+  font-weight: 700;
+
+  padding: 0 28px;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    opacity 0.2s ease;
+
+  box-shadow:
+    0 10px 24px rgba(255,168,0,0.25);
+}
+
+.passengers-next:hover,
+.payment-next:hover,
+.success-button:hover,
+.next-button:hover,
+.train-card__button:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 14px 28px rgba(255,168,0,0.35);
+}
+
+.passengers-next:active,
+.payment-next:active,
+.success-button:active,
+.next-button:active,
+.train-card__button:active {
+  transform: translateY(0);
+}
+
+/* =========================================
+   SUCCESS
+========================================= */
+
+.success-box {
+  max-width: 900px;
+
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 24px;
+}
+
+.success-top {
+  background: #ffa800;
+
+  color: white;
+
+  border-radius: 24px;
+
+  padding: 40px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.success-top h1 {
+  font-size: 40px;
+}
+
+.success-price {
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.success-card h2 {
+  margin-bottom: 18px;
+
+  font-size: 28px;
+}
+
+.success-card p {
+  margin-bottom: 10px;
+
+  font-size: 18px;
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 1000px) {
+
+  .passengers-layout,
+  .payment-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .passengers-sidebar,
+  .payment-sidebar {
+    position: static;
+  }
+
+  .passenger-grid,
+  .passenger-docs,
+  .payment-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .success-top {
+    flex-direction: column;
+
+    gap: 20px;
+
+    text-align: center;
+  }
+}

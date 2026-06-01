@@ -1,0 +1,1218 @@
+.train-page {
+  min-height: 100vh;
+
+  background: #f4f3f6;
+
+  padding-top: 160px;
+}
+
+/* =========================================
+   SECTION
+========================================= */
+
+.train-section {
+  padding: 40px 0 100px;
+}
+
+/* =========================================
+   TRAIN CARD
+========================================= */
+
+.train-card {
+  background: white;
+
+  border-radius: 24px;
+
+  overflow: hidden;
+
+  display: grid;
+
+  grid-template-columns:
+    280px
+    1fr
+    240px;
+
+  box-shadow:
+    0 10px 40px rgba(0,0,0,0.08);
+
+  margin-bottom: 40px;
+}
+
+.train-card__train {
+  background: #3e3c47;
+  color: white;
+  padding: 34px;
+}
+
+.train-card__train-icon {
+  width: 42px;
+  margin-bottom: 24px;
+}
+
+.train-card__train h2 {
+  font-size: 42px;
+  margin-bottom: 18px;
+}
+
+.train-card__train p {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.train-card__route {
+  padding: 34px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 24px;
+}
+
+.train-card__time {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.train-card__city {
+  font-size: 20px;
+  font-weight: 700;
+
+  margin-top: 8px;
+}
+
+.train-card__station {
+  color: #928f94;
+
+  margin-top: 4px;
+
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.train-card__duration {
+  text-align: center;
+}
+
+.train-card__duration img {
+  width: 28px;
+  margin-bottom: 10px;
+}
+
+.train-card__duration div {
+  color: #928f94;
+}
+
+.train-card__details {
+  border-left: 1px solid #ececec;
+
+  padding: 34px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.train-card__price-label {
+  color: #928f94;
+  margin-bottom: 8px;
+}
+
+.train-card__price {
+  font-size: 38px;
+  font-weight: 700;
+
+  color: #ffa800;
+}
+
+/* =========================================
+   TITLE
+========================================= */
+
+.train-page__section-title {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+/* =========================================
+   PASSENGERS
+========================================= */
+
+.train-page__passengers {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  margin-bottom: 24px;
+
+  background: #fff4db;
+
+  border: 1px solid #ffd27a;
+
+  border-radius: 14px;
+
+  padding:
+    12px
+    18px;
+
+  font-size: 18px;
+  font-weight: 700;
+
+  color: #3e3c47;
+}
+
+/* =========================================
+   TYPES
+========================================= */
+
+.wagon-types {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+
+  gap: 20px;
+
+  margin-bottom: 40px;
+}
+
+.wagon-type {
+  border: none;
+  background: white;
+
+  border-radius: 18px;
+
+  height: 120px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 12px;
+
+  cursor: pointer;
+
+  transition: 
+   transform 0.2s ease,
+   box-shadow 0.2s ease,
+   opacity 0.2s ease,
+   border 0.2s ease;
+
+  opacity: 0.45;
+}
+
+.wagon-type.active {
+  opacity: 1;
+
+  border: 2px solid #ffa800;
+}
+
+.wagon-type img {
+  width: 42px;
+  height: 42px;
+}
+
+.wagon-type span {
+  font-size: 18px;
+  font-weight: 600;
+}
+.wagon-type:not(.active):hover {
+  transform: translateY(-4px);
+
+  box-shadow:
+    0 12px 28px rgba(0,0,0,0.12);
+
+  opacity: 1;
+}
+
+/* =========================================
+   COACH LIST
+========================================= */
+
+.coach-list {
+  display: flex;
+  gap: 14px;
+
+  margin-bottom: 40px;
+}
+
+.coach-button {
+  width: 74px;
+  height: 74px;
+
+  border: none;
+
+  border-radius: 16px;
+
+  background: white;
+
+  color: #ffa800;
+
+  font-size: 28px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 
+   transform 0.2s ease,
+   box-shadow 0.2s ease,
+   background 0.2s ease;
+}
+
+.coach-button.active {
+  background: #ffa800;
+  color: white;
+}
+.coach-button:not(.active):hover {
+  transform: translateY(-2px);
+
+  background: #fff8e8;
+
+  box-shadow:
+    0 12px 24px rgba(0,0,0,0.12);
+}
+
+/* =========================================
+   COACH INFO
+========================================= */
+
+.coach-info {
+  background: white;
+
+  border-radius: 24px;
+
+  padding: 40px;
+
+  box-shadow:
+    0 10px 40px rgba(0,0,0,0.08);
+}
+
+.coach-info h2 {
+  font-size: 34px;
+  margin-bottom: 12px;
+}
+
+.coach-info p {
+  margin-bottom: 10px;
+}
+
+/* =========================================
+   SERVICES
+========================================= */
+
+.coach-services {
+  display: flex;
+  gap: 28px;
+
+  margin: 28px 0 32px;
+}
+
+.coach-services label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  color: #292929;
+}
+
+.coach-services input {
+  width: 16px;
+  height: 16px;
+}
+
+.coach-services img {
+  width: 18px;
+  height: 18px;
+
+  object-fit: contain;
+}
+
+.coach-services b {
+  font-size: 15px;
+  color: #ffa800;
+}
+
+/* =========================================
+   WAGON MAP
+========================================= */
+
+.wagon-map {
+  background: white;
+
+  border: 2px solid #e3e3e3;
+  border-radius: 24px;
+
+  padding: 20px;
+
+  overflow-x: auto;
+
+  width: fit-content;
+
+  max-width: 100%;
+}
+
+/* =========================================
+   COMMON
+========================================= */
+
+.coupe-layout,
+.platz-main,
+.lux-layout {
+  display: flex;
+  align-items: flex-start;
+
+  gap: 12px;
+
+  width: fit-content;
+}
+
+.coupe-service-room,
+.platz-service-room,
+.lux-service-room {
+  width: 56px;
+  min-width: 56px;
+
+  height: 116px;
+
+  border: 2px solid #dddddd;
+  border-radius: 16px;
+
+  background: #fafafa;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wagon-end-icons {
+  display: flex;
+  flex-direction: column;
+
+  gap: 10px;
+
+  padding-top: 18px;
+}
+
+.wagon-end-icons img {
+  width: 16px;
+  height: 16px;
+}
+
+.coupe-service-room img,
+.platz-service-room img,
+.lux-service-room img {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+}
+
+/* =========================================
+   PASSAGE
+========================================= */
+
+.coupe-passage,
+.platz-passage,
+.lux-passage {
+  height: 24px;
+
+  margin-top: 12px;
+
+  border-radius: 10px;
+
+  width: 100%;
+
+  background:
+    repeating-linear-gradient(
+      to right,
+      #f3f3f3,
+      #f3f3f3 14px,
+      #ebebeb 14px,
+      #ebebeb 28px
+    );
+}
+
+/* =========================================
+   COUPE
+========================================= */
+
+.coupe-wrapper {
+  width: fit-content;
+}
+
+.coupe-box {
+  position: relative;
+
+  width: 108px;
+  height: 128px;
+
+  padding: 10px;
+
+  border: 2px solid #dddddd;
+  border-radius: 16px;
+
+  background: #fafafa;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.coupe-box::after {
+  content: '';
+
+  position: absolute;
+
+  top: 10px;
+  bottom: 10px;
+
+  left: 50%;
+
+  width: 1px;
+
+  background: #e5e5e5;
+}
+
+.coupe-left,
+.coupe-right {
+  display: flex;
+  flex-direction: column;
+
+  gap: 8px;
+}
+
+.coupe-seat {
+  width: 36px;
+  height: 30px;
+
+  font-size: 12px;
+
+  border: none;
+  border-radius: 6px;
+
+  background: #efefef;
+
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+.coupe-seat.active {
+  background: #ffa800;
+  color: white;
+}
+.coupe-seat,
+.platz-seat,
+.lux-seat,
+.seat-chair {
+  transition:
+    transform 0.15s ease,
+    background 0.2s ease;
+
+  position: relative;
+
+  overflow: hidden;
+}
+.coupe-seat.active,
+.platz-seat.active,
+.lux-seat.active,
+.seat-chair.active {
+  box-shadow:
+    0 0 0 3px rgba(255,168,0,0.18);
+}
+.coupe-seat:hover,
+.platz-seat:hover,
+.lux-seat:hover,
+.seat-chair:hover {
+  transform: scale(1.06);
+
+  box-shadow:
+    0 4px 14px rgba(255,168,0,0.22);
+}
+.coupe-seat.disabled,
+.platz-seat.disabled,
+.lux-seat.disabled,
+.seat-chair.disabled {
+  background: #d8d8d8;
+
+  color: #8c8c8c;
+
+  cursor: not-allowed;
+
+  opacity: 0.7;
+
+  box-shadow: none;
+  pointer-events: none;
+}
+.coupe-seat.disabled:hover,
+.platz-seat.disabled:hover,
+.lux-seat.disabled:hover,
+.seat-chair.disabled:hover {
+  transform: none;
+
+  box-shadow: none;
+}
+
+/* =========================================
+   PLATZKART
+========================================= */
+
+.platz-wrapper {
+  width: fit-content;
+}
+
+.platz-coupe {
+  position: relative;
+
+  width: 108px;
+  height: 128px;
+
+  padding: 10px;
+
+  border: 2px solid #dddddd;
+  border-radius: 16px;
+
+  background: #fafafa;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.platz-coupe::after {
+  content: '';
+
+  position: absolute;
+
+  top: 10px;
+  bottom: 10px;
+
+  left: 50%;
+
+  width: 1px;
+
+  background: #e5e5e5;
+}
+
+.platz-left,
+.platz-right {
+  display: flex;
+  flex-direction: column;
+
+  gap: 8px;
+}
+
+.platz-seat {
+  width: 36px;
+  height: 30px;
+
+  border: none;
+  border-radius: 6px;
+
+  background: #efefef;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+.platz-seat.active {
+  background: #ffa800;
+  color: white;
+}
+
+/* БОКОВЫЕ МЕСТА */
+
+.platz-side {
+  display: flex;
+
+  gap: 12px;
+
+  margin-top: 12px;
+
+  padding-left: 68px;
+}
+
+.platz-side-item {
+  width: 28px;
+}
+
+/* =========================================
+   LUX
+========================================= */
+
+.lux-wrapper {
+  width: fit-content;
+}
+
+.lux-room {
+  width: 150px;
+  height: 92px;
+
+  padding: 12px;
+
+  border: 2px solid #dddddd;
+  border-radius: 16px;
+
+  background: #fafafa;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lux-seat {
+  width: 54px;
+  height: 36px;
+
+  font-size: 13px;
+
+  border: none;
+  border-radius: 8px;
+
+  background: #efefef;
+
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+.lux-seat.active {
+  background: #ffa800;
+  color: white;
+}
+
+/* =========================================
+   EMPTY
+========================================= */
+
+.empty {
+  visibility: hidden;
+}
+
+/* =========================================
+   SUMMARY
+========================================= */
+
+.ticket-summary {
+  margin-top: 36px;
+
+  background: #fff8e8;
+
+  border:
+    2px solid #ffa800;
+
+  border-radius: 20px;
+
+  padding: 28px;
+}
+
+.ticket-summary h2 {
+  color: #ffa800;
+
+  margin-top: 14px;
+
+  font-size: 24px;
+}
+
+.next-button {
+  width: 100%;
+
+  margin-top: 24px;
+
+  border: none;
+
+  border-radius: 16px;
+
+  background: #ffa800;
+
+  color: white;
+
+  font-size: 20px;
+  font-weight: 700;
+
+  padding: 18px;
+
+  cursor: pointer;
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 1100px) {
+
+  .train-card {
+    grid-template-columns: 1fr;
+  }
+
+  .train-card__details {
+    border-left: none;
+
+    border-top:
+      1px solid #ececec;
+  }
+
+  .wagon-types {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+  .wagon-map {
+    padding: 24px;
+  }
+
+  .coupe-wrapper,
+  .platz-wrapper,
+  .lux-wrapper,
+  .seated-layout {
+    overflow-x: auto;
+  }
+}
+
+/* =========================================
+   ICON SIZES
+========================================= */
+
+.coupe-service-room img,
+.platz-service-room img,
+.lux-service-room img,
+.seated-service-room img {
+  width: 20px !important;
+  height: 20px !important;
+
+  object-fit: contain;
+}
+
+.wagon-end-icons img {
+  width: 16px !important;
+  height: 16px !important;
+}
+
+.wagon-bottom-icons img {
+  width: 16px !important;
+  height: 16px !important;
+}
+
+/* =========================================
+   SEATED
+========================================= */
+
+.seated-layout {
+  width: fit-content;
+
+  overflow-x: auto;
+}
+
+.seated-frame {
+  border: 2px solid #dddddd;
+
+  border-radius: 24px;
+
+  padding: 24px;
+
+  background: #fafafa;
+
+  width: fit-content;
+}
+
+/* ВЕРХ */
+
+.seated-top {
+  display: flex;
+  align-items: flex-start;
+
+  gap: 24px;
+
+  margin-bottom: 24px;
+}
+
+.seated-service-room {
+  width: 56px;
+  min-width: 56px;
+
+  height: 120px;
+
+  border: 2px solid #dddddd;
+  border-radius: 16px;
+
+  background: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.seated-service-room img {
+  width: 18px;
+  height: 18px;
+
+  object-fit: contain;
+}
+
+/* СХЕМА */
+
+.seated-grid {
+  display: flex;
+  flex-direction: column;
+
+  gap: 18px;
+
+  width: fit-content;
+}
+
+/* ВЕРХНИЙ И НИЖНИЙ РЯД */
+
+.seated-side {
+  display: flex;
+
+  gap: 14px;
+}
+
+/* БЛОК 2+2 */
+
+.seated-pair {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, 42px);
+
+  grid-template-rows:
+    repeat(2, 30px);
+
+  gap: 8px;
+
+  padding-right: 14px;
+}
+
+/* ЦЕНТРАЛЬНЫЙ ПРОХОД */
+
+.seated-center-passage {
+  height: 26px;
+
+  border-radius: 10px;
+
+  background:
+    repeating-linear-gradient(
+      to right,
+      #f3f3f3,
+      #f3f3f3 14px,
+      #ebebeb 14px,
+      #ebebeb 28px
+    );
+}
+
+/* КНОПКИ */
+
+.seat-chair {
+  width: 42px;
+  height: 30px;
+
+  border: none;
+  border-radius: 6px;
+
+  background: #efefef;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+.seat-chair.active {
+  background: #ffa800;
+  color: white;
+}
+
+/* НИЖНИЕ ИКОНКИ */
+
+.wagon-bottom-icons {
+  display: flex;
+
+  gap: 10px;
+
+  margin-top: 16px;
+}
+
+.wagon-bottom-icons img,
+.wagon-end-icons img {
+  width: 16px !important;
+  height: 16px !important;
+
+  object-fit: contain;
+}
+
+/* =========================================
+   FIX ICONS
+========================================= */
+
+.wagon-map img {
+  width: auto !important;
+  height: auto !important;
+  max-width: none !important;
+}
+
+.coupe-service-room img,
+.platz-service-room img,
+.lux-service-room img,
+.seated-service-room img {
+  width: 20px !important;
+  height: 20px !important;
+
+  object-fit: contain;
+}
+
+.wagon-end-icons img,
+.wagon-bottom-icons img {
+  width: 16px !important;
+  height: 16px !important;
+
+  object-fit: contain;
+}
+/* =========================================
+   PROGRESS STEPS
+========================================= */
+
+.progress-steps {
+  background: white;
+
+  border-bottom:
+    1px solid #e5e5e5;
+}
+
+.progress-steps__row {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+}
+
+.progress-step {
+  height: 98px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 18px;
+
+  position: relative;
+
+  background: #f7f6f9;
+
+  color: #928f94;
+
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.progress-step.active {
+  background: #ffa800;
+
+  color: white;
+}
+
+.progress-step__number {
+  width: 56px;
+  height: 56px;
+
+  border-radius: 50%;
+
+  border: 3px solid currentColor;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.progress-step::after {
+  content: '';
+
+  position: absolute;
+
+  right: -18px;
+  top: 0;
+
+  width: 36px;
+  height: 100%;
+
+  background: inherit;
+
+  transform: skewX(-25deg);
+
+  z-index: 2;
+}
+
+.progress-step:last-child::after {
+  display: none;
+}
+
+@media (max-width: 900px) {
+
+  .progress-step {
+    font-size: 16px;
+
+    gap: 10px;
+
+    height: 72px;
+  }
+
+  .progress-step__number {
+    width: 38px;
+    height: 38px;
+
+    font-size: 18px;
+  }
+}
+/* =========================================
+   SUCCESS
+========================================= */
+
+.success-page {
+  min-height: 70vh;
+
+  background: #f4f3f6;
+
+  padding: 140px 0 80px;
+}
+
+.success-card {
+  background: white;
+
+  border-radius: 32px;
+
+  padding: 70px;
+
+  text-align: center;
+
+  box-shadow:
+    0 10px 40px rgba(0,0,0,0.08);
+}
+
+.success-icon {
+  width: 110px;
+  height: 110px;
+
+  margin: 0 auto 30px;
+
+  border-radius: 50%;
+
+  background: #ffa800;
+
+  color: white;
+
+  font-size: 52px;
+  font-weight: 700;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.success-card h1 {
+  font-size: 42px;
+
+  margin-bottom: 20px;
+
+  color: #292929;
+}
+
+.success-card p {
+  font-size: 20px;
+
+  color: #928f94;
+
+  margin-bottom: 40px;
+}
+
+.success-info {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 24px;
+}
+
+.success-info div {
+  background: #fafafa;
+
+  border-radius: 18px;
+
+  padding: 30px;
+}
+
+.success-info span {
+  display: block;
+
+  color: #928f94;
+
+  margin-bottom: 10px;
+}
+
+.success-info b {
+  font-size: 28px;
+
+  color: #292929;
+}
+
+@media (max-width: 900px) {
+
+  .success-card {
+    padding: 40px 24px;
+  }
+
+  .success-info {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =========================================
+   TRAIN LOADER
+========================================= */
+
+.train-loader {
+  min-height: 70vh;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 24px;
+
+  color: #928f94;
+
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.train-loader__spinner {
+  width: 74px;
+  height: 74px;
+
+  border-radius: 50%;
+
+  border: 6px solid #ececec;
+  border-top-color: #ffa800;
+
+  animation:
+    train-loader-spin 0.9s linear infinite;
+}
+
+@keyframes train-loader-spin {
+
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}

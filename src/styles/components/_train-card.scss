@@ -1,0 +1,373 @@
+.train-card {
+  display: grid;
+
+  grid-template-columns:
+    260px
+    1fr
+    260px;
+
+  background: #ffffff;
+
+  border-radius: 24px;
+
+  overflow: hidden;
+
+  box-shadow:
+    0 10px 35px
+    rgba(0,0,0,0.08);
+
+  transition: 0.2s ease;
+
+  cursor: pointer;
+}
+
+.train-card:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 18px 45px
+    rgba(0,0,0,0.12);
+}
+
+/* LEFT */
+
+.train-card__left {
+  background: #3e3c41;
+
+  color: white;
+
+  padding: 40px 28px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.train-card__train-icon img {
+  width: 52px;
+  height: 52px;
+
+  margin-bottom: 24px;
+
+  filter:
+    brightness(0)
+    invert(1);
+}
+
+.train-card__name {
+  font-size: 38px;
+  font-weight: 700;
+
+  margin-bottom: 24px;
+}
+
+.train-card__cities {
+  display: flex;
+  flex-direction: column;
+
+  gap: 12px;
+
+  font-size: 20px;
+
+  color:
+    rgba(
+      255,
+      255,
+      255,
+      0.85
+    );
+}
+
+/* CENTER */
+
+.train-card__center {
+  padding: 34px 40px;
+}
+
+.train-card__route {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 30px;
+
+  margin-bottom: 36px;
+}
+
+.train-card__time {
+  font-size: 42px;
+  font-weight: 700;
+
+  margin-bottom: 10px;
+}
+
+.train-card__city {
+  font-size: 20px;
+  font-weight: 600;
+
+  margin-bottom: 6px;
+}
+
+.train-card__station {
+  color: #928f94;
+
+  font-size: 14px;
+
+  line-height: 1.4;
+}
+
+.train-card__duration {
+  text-align: center;
+}
+
+.train-card__duration-top {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  margin-bottom: 12px;
+
+  color: #928f94;
+}
+
+.train-card__duration-top img {
+  width: 20px;
+  height: 20px;
+}
+
+.train-card__arrow {
+  font-size: 34px;
+
+  color: #ffa800;
+}
+
+/* SERVICES */
+
+.train-card__services {
+  display: flex;
+
+  gap: 14px;
+
+  margin-bottom: 24px;
+}
+
+.service {
+  width: 46px;
+  height: 46px;
+
+  border:
+    1px solid #d9d9d9;
+
+  border-radius: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service img {
+  width: 22px;
+  height: 22px;
+}
+
+/* PASSENGERS */
+
+.train-card__selected-passengers {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  background: #f5f6f8;
+
+  border-radius: 12px;
+
+  padding:
+    12px
+    18px;
+
+  margin-bottom: 28px;
+
+  width: fit-content;
+
+  font-size: 18px;
+  font-weight: 700;
+
+  color: #292929;
+}
+
+.train-card__selected-passengers span {
+  display: flex;
+  align-items: center;
+}
+
+/* COACHES */
+
+.train-card__coaches {
+  display: flex;
+
+  gap: 32px;
+}
+
+.coach-type {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  gap: 10px;
+
+  color: #928f94;
+
+  font-size: 14px;
+
+  transition: 0.2s;
+}
+
+.coach-type.active {
+  color: #292929;
+}
+
+.coach-type img {
+  width: 34px;
+  height: 34px;
+}
+
+/* RIGHT */
+
+.train-card__right {
+  border-left:
+    1px solid #ececec;
+
+  padding: 34px 28px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: space-between;
+}
+
+.train-card__price-label {
+  color: #928f94;
+
+  margin-bottom: 10px;
+}
+
+.train-card__price {
+  font-size: 42px;
+  font-weight: 700;
+
+  color: #ffa800;
+
+  margin-bottom: 24px;
+}
+
+.train-card__passengers {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  color: #928f94;
+}
+
+.train-card__passengers img {
+  width: 20px;
+  height: 20px;
+}
+
+.train-card__button {
+  width: 100%;
+  height: 62px;
+
+  border: none;
+
+  border-radius: 12px;
+
+  background: #ffa800;
+
+  color: white;
+
+  font-size: 18px;
+  font-weight: 700;
+
+  transition:
+   transform 0.2s ease,
+   box-shadow 0.2s ease,
+   opacity 0.2s ease;
+
+  cursor: pointer;
+}
+
+.train-card__button:hover {
+  background: #ffb933;
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 10px 24px rgba(255,168,0,0.35);
+}
+
+/* MOBILE */
+
+@media (max-width: 1200px) {
+
+  .train-card {
+    grid-template-columns:
+      1fr;
+  }
+
+  .train-card__right {
+    border-left: none;
+
+    border-top:
+      1px solid #ececec;
+  }
+
+  .train-card__route {
+    flex-direction: column;
+
+    align-items: flex-start;
+  }
+
+  .train-card__coaches {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 700px) {
+
+  .train-card__center {
+    padding: 24px;
+  }
+
+  .train-card__left {
+    padding: 24px;
+  }
+
+  .train-card__right {
+    padding: 24px;
+  }
+
+  .train-card__time {
+    font-size: 32px;
+  }
+
+  .train-card__price {
+    font-size: 34px;
+  }
+
+  .train-card__selected-passengers {
+    width: 100%;
+
+    justify-content: center;
+
+    font-size: 16px;
+  }
+}

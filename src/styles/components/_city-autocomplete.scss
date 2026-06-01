@@ -1,0 +1,36 @@
+.city-autocomplete {
+  position: relative;
+  width: 100%;
+}
+
+.city-autocomplete__dropdown {
+  position: absolute;
+
+  top: calc(100% + 8px);
+  left: 0;
+  right: 0;
+
+  background: #fff;
+
+  border-radius: 16px;
+
+  box-shadow:
+    0 10px 30px
+    rgba(0, 0, 0, 0.16);
+
+  overflow: hidden;
+
+  z-index: 99999;
+}
+
+.city-autocomplete__item {
+  padding: 14px 18px;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.city-autocomplete__item:hover {
+  background: #f3f3f3;
+}

@@ -1,0 +1,15 @@
+@import './abstracts/variables';
+@import './base/reset';
+@import './base/base';
+@import './layouts/header';
+@import './layouts/footer';
+@import './pages/home';
+@import './components/search-form';
+@import './components/city-autocomplete';
+@import './components/train-card';
+@import './components/search-filters';
+@import './components/pagination';
+@import './pages/train-page';
+@import './pages/search';
+@import './components/page-hero';
+@import './pages/passengers';
